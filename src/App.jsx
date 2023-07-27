@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar';
-import Banner from './containers/Banner';
+import NavBar from './containers/navbar/NavBar';
+import Banner from './containers/banner/Banner';
 import Services from './containers/Services';
 import Projects from './containers/Projects';
 import Blog from './containers/Blog';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Contact from './containers/Contact';
+import Footer from './containers/Footer';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

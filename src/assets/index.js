@@ -19,6 +19,12 @@ import blog3 from './img/section-b-blog-pic2-copy.png';
 import blog4 from './img/section-b-blog-pic3-copy.png';
 import blog5 from './img/section-b-blog-pic4-copy.png';
 
+import navIcon1 from './img/nav-icon1.svg';
+import navIcon2 from './img/nav-icon2.svg';
+import navIcon3 from './img/nav-icon3.svg';
+
+import logo from './img/ig-holdings-logo/logo-no-background-500px.png';
+
 export {
 	colorSharp,
 	colorSharp2,
@@ -37,4 +43,8 @@ export {
 	blog3,
 	blog4,
 	blog5,
+	navIcon1,
+	navIcon2,
+	navIcon3,
+	logo,
 };

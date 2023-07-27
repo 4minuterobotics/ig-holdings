@@ -1,13 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-// import logo2 from '../assets/img/logo.svg';
-import logo from '../assets/img/ig-holdings-logo/logo-no-background-500px.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-// import navIcon2 from '../assets/img/nav-icon2.svg';
-// import navIcon3 from '../assets/img/nav-icon3.svg';
+import { logo, navIcon1 } from '../../assets';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './navbar.css';
 
 const NavBar = () => {
 	const [activeLink, setActiveLink] = useState('home');

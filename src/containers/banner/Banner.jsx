@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { medicalShield } from '../assets';
+import { medicalShield } from '../../assets';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './banner.css';
 
 const Banner = () => {
 	return (
