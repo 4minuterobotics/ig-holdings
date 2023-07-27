@@ -246,13 +246,14 @@ span.navbar-text {
 	}
 
 	.banner img {
-		width: 25%;
-		margin-left: 12rem;
+		/* width: 25%;
+		margin-left: 12rem; */
+		display: none;
 	}
 
 	.contact img {
 		width: 52% !important;
-		margin-left: 8rem;
+		margin: auto;
 		margin-bottom: 2rem;
 	}
 }
@@ -918,4 +919,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	color: #b8b8b8;
 	letter-spacing: 0.5px;
 	margin-top: 20px;
+}
+
+/* ...................... global centering style.................. */
+.flexbox {
+	display: flex;
+}
+
+.align-items-center {
+	justify-content: center;
 }

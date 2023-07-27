@@ -76,7 +76,7 @@ const Contact = () => {
 			id='connect'
 		>
 			<Container>
-				<Row className='align-items-center'>
+				<Row>
 					<Col
 						size={12}
 						md={6}
@@ -86,11 +86,17 @@ const Contact = () => {
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
               } */}
 							{({ isVisible }) => (
-								<img
-									className={isVisible ? 'animate__animated animate__zoomIn round-image' : 'invisible-start round-image'}
-									src={logo}
-									alt='Contact Us'
-								/>
+								<div className='flexbox'>
+									<img
+										className={
+											isVisible
+												? 'animate__animated animate__zoomIn round-image align-items-center'
+												: 'invisible-start round-image align-items-center'
+										}
+										src={logo}
+										alt='Contact Us'
+									/>
+								</div>
 							)}
 						</TrackVisibility>
 					</Col>
