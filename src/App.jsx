@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './containers/navbar/NavBar';
 import Banner from './containers/banner/Banner';
-import Services from './containers/Services';
+import Services from './containers/services/Services';
 import Projects from './containers/Projects';
 import Blog from './containers/Blog';
 import Contact from './containers/Contact';

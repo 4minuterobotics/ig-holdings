@@ -1,6 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { colorSharp, counseling, heart, monitor, house, clinic } from '../assets';
+import { colorSharp, counseling, heart, monitor, house, clinic } from '../../assets';
+import './services.css';
 
 import React from 'react';
 
