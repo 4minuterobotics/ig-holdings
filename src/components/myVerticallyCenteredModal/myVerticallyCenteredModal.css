@@ -1,0 +1,43 @@
+.my-modal .github-div {
+	inset: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3px;
+	margin-top: 20px;
+}
+
+.my-modal .github-icon {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+}
+
+.my-modal .tech-used {
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+.my-modal .website-link {
+	font-style: bold;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: white;
+	margin-left: 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.my-modal .website-link p {
+	margin-bottom: 0rem;
+}
+
+.my-modal .modal-content {
+	/* background: linear-gradient(90.21deg, #000000 -5.91%, #4A2FBD 111.58%); */
+	background: rgb(1, 1, 48);
+}

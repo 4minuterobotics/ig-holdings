@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../assets/img/ig-holdings-logo/logo-color-500px.png';
+import { logoColorBg } from '../../assets';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import './contact.css';
 
 // import express from 'express'
 
@@ -93,7 +94,7 @@ const Contact = () => {
 												? 'animate__animated animate__zoomIn round-image align-items-center'
 												: 'invisible-start round-image align-items-center'
 										}
-										src={logo}
+										src={logoColorBg}
 										alt='Contact Us'
 									/>
 								</div>

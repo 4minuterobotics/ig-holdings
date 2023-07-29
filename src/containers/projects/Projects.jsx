@@ -1,13 +1,14 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
-import { ProjectCard, ExperienceCard } from '../components';
+import { ProjectCard, ExperienceCard } from '../../components';
 
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { website1, website2, website3, website4, colorSharp2, medicalShield } from '../assets';
+import { website1, website2, website3, website4, colorSharp2, medicalShield } from '../../assets';
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import './projects.css';
 
 import React from 'react';
 

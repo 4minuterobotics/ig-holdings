@@ -23,7 +23,8 @@ import navIcon1 from './img/nav-icon1.svg';
 import navIcon2 from './img/nav-icon2.svg';
 import navIcon3 from './img/nav-icon3.svg';
 
-import logo from './img/ig-holdings-logo/logo-no-background-500px.png';
+import logoNoBg from './img/ig-holdings-logo/logo-no-background-500px.png';
+import logoColorBg from './img/ig-holdings-logo/logo-color-500px.png';
 
 export {
 	colorSharp,
@@ -46,5 +47,6 @@ export {
 	navIcon1,
 	navIcon2,
 	navIcon3,
-	logo,
+	logoNoBg,
+	logoColorBg,
 };

@@ -1,56 +1,7 @@
 import React, { useState } from 'react';
 import { Col } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-
-function MyVerticallyCenteredModal(props) {
-	return (
-		<Modal
-			{...props}
-			size='sm'
-			className='my-modal'
-			aria-labelledby='contained-modal-title-vcenter'
-			centered
-		>
-			<Modal.Header className='modal-header'>
-				<Modal.Title id='contained-modal-title-vcenter'>{props.title}</Modal.Title>
-			</Modal.Header>
-			<Modal.Body>
-				<p>{props.description}</p>
-
-				<div className='tech-used'>
-					{props.tags.map((tag) => (
-						<span
-							key={`${props.title}-${tag.name}`}
-							className={` ${tag.color}`}
-						>
-							#{tag.name}
-						</span>
-					))}
-				</div>
-
-				<div className='github-div'>
-					<div
-						className='website-link'
-						onClick={() => window.open(props.website_link, '_blank')}
-					>
-						<p>Visit Website</p>
-					</div>
-				</div>
-			</Modal.Body>
-			<Modal.Footer>
-				<Button
-					variant='light'
-					onClick={props.onHide}
-				>
-					Close
-				</Button>
-			</Modal.Footer>
-		</Modal>
-	);
-}
+import { MyVerticallyCenteredModal } from '..';
+import './projectCard.css';
 
 const ProjectCard = ({ title, description, imgUrl, tags, source_code_link, website_link }) => {
 	const [modalShow, setModalShow] = useState(false);
@@ -69,7 +20,7 @@ const ProjectCard = ({ title, description, imgUrl, tags, source_code_link, websi
 					<img src={imgUrl} />
 
 					<div className='proj-txtx'>
-						<h4 className='project-card-title'>{title}</h4>
+						<h4>{title}</h4>
 					</div>
 				</div>
 			</Col>

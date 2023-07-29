@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './article.css';
 
 const Article = ({ imgUrl, date, text, smImgUrl }) => {
 	const [loaded, setLoaded] = useState(false);

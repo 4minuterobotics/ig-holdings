@@ -1,10 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import MailchimpForm from '../components/MailchimpForm';
-import logo from '../assets/img/logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-
+import MailchimpForm from '../../components/mailchimpForm/MailchimpForm';
+import { navIcon1 } from '../../assets';
+import './footer.css';
 import React from 'react';
 
 const Footer = () => {
@@ -21,7 +18,7 @@ const Footer = () => {
 						sm={6}
 						className='text-center text-sm-end'
 					>
-						<div className='social-icon'>
+						<div className='social-icon footer-icons'>
 							<a href='https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/'>
 								<img
 									src={navIcon1}

@@ -1,7 +1,8 @@
 import React from 'react';
-import Article from '../components/Article';
+import Article from '../../components/article/Article';
 
-import { blog1, blog2, blog3, blog4, blog5 } from '../assets';
+import { blog1, blog2, blog3, blog4, blog5 } from '../../assets';
+import './blog.css';
 
 const Blog = () => (
 	<div

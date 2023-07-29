@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './containers/navbar/NavBar';
 import Banner from './containers/banner/Banner';
 import Services from './containers/services/Services';
-import Projects from './containers/Projects';
-import Blog from './containers/Blog';
-import Contact from './containers/Contact';
-import Footer from './containers/Footer';
+import Projects from './containers/projects/Projects';
+import Blog from './containers/blog/Blog';
+import Contact from './containers/contact/Contact';
+import Footer from './containers/footer/Footer';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
