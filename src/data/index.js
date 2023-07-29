@@ -167,27 +167,27 @@ export const experiences = [
 export const blogArticles = [
 	{
 		id: 1,
-		imgUrl: { blog2 },
+		imgUrl: blog2,
 		date: 'March 26, 2023',
 		text: "Survival skills are a must. Here's what we did and learned at Suvivor Camp.",
 	},
 
 	{
 		id: 2,
-		imgUrl: { blog3 },
+		imgUrl: blog3,
 		date: 'March 26, 2023',
 		text: "Survival skills are a must. Here's what we did and learned at Suvivor Camp.",
 	},
 	{
 		id: 3,
-		imgUrl: { blog4 },
+		imgUrl: blog4,
 		date: 'March 26, 2023',
 		text: "Survival skills are a must. Here's what we did and learned at Suvivor Camp.",
 	},
 
 	{
 		id: 4,
-		imgUrl: { blog5 },
+		imgUrl: blog5,
 		date: 'March 26, 2023',
 		text: "Survival skills are a must. Here's what we did and learned at Suvivor Camp.",
 	},

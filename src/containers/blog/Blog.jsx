@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from '../../components/article/Article';
+import { blogArticles } from '../../data';
 
 import { blog1, blog2, blog3, blog4, blog5 } from '../../assets';
 import './blog.css';
@@ -16,7 +17,17 @@ const Blog = () => (
 		</div>
 		<div className='rd__blog-container'>
 			<div className='rd__blog-container_groupB'>
-				<Article
+				{blogArticles.map((article, index) => {
+					return (
+						<Article
+							key={index}
+							imgUrl={article.imgUrl}
+							date={article.date}
+							text={article.text}
+						/>
+					);
+				})}
+				{/* <Article
 					imgUrl={blog2}
 					date='March 26, 2023'
 					text="Survival skills are a must. Here's what we did and learned at Suvivor Camp."
@@ -35,7 +46,7 @@ const Blog = () => (
 					imgUrl={blog5}
 					date='March 26, 2023'
 					text="Survival skills are a must. Here's what we did and learned at Suvivor Camp."
-				/>
+				/> */}
 			</div>
 		</div>
 	</div>
