@@ -7,6 +7,9 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.banner-align-items-center {
+	justify-content: center;
+}
 .banner .tagline {
 	font-weight: 700;
 	letter-spacing: 0.8px;

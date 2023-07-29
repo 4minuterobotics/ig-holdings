@@ -17,7 +17,7 @@ const Banner = () => {
 				id='home'
 			>
 				<Container>
-					<Row className='align-items-center'>
+					<Row className='banner-align-items-center'>
 						<Col
 							xs={12}
 							md={6}

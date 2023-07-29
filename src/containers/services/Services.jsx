@@ -1,9 +1,22 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { colorSharp, counseling, heart, monitor, house, clinic } from '../../assets';
+import { services } from '../../data';
 import './services.css';
 
 import React from 'react';
+
+function ServiceItem(props) {
+	return (
+		<div className='item'>
+			<img
+				src={props.imgUrl}
+				alt={props.title}
+			/>
+			<h5>{props.title}</h5>
+		</div>
+	);
+}
 
 const Services = () => {
 	const responsive = {
@@ -42,7 +55,16 @@ const Services = () => {
 								infinite={true}
 								className='owl-carousel owl-theme skill-slider'
 							>
-								<div className='item padding'>
+								{services.map((service) => {
+									return (
+										<ServiceItem
+											key={service.id}
+											title={service.title}
+											imgUrl={service.imgUrl}
+										/>
+									);
+								})}
+								{/* <div className='item'>
 									<img
 										src={counseling}
 										alt='Behavioral Health Integration'
@@ -80,7 +102,7 @@ const Services = () => {
 										alt='Chronic Care Management Programs'
 									/>
 									<h5>Chronic Care Management Programs</h5>
-								</div>
+								</div> */}
 							</Carousel>
 						</div>
 					</div>

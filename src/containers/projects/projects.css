@@ -4,6 +4,9 @@
 	position: relative;
 	background-color: black;
 }
+.project-align-items-center {
+	justify-content: center;
+}
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;

@@ -151,7 +151,7 @@ const Projects = () => {
 									>
 										<Nav
 											variant='pills'
-											className='nav-pills mb-5 justify-content-center align-items-center'
+											className='nav-pills mb-5 justify-content-center project-align-items-center'
 											id='pills-tab'
 										>
 											<Nav.Item>

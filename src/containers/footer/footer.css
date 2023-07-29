@@ -6,7 +6,9 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+.footer-align-items-center {
+	justify-content: center;
+}
 .footer img {
 	width: 26%;
 }

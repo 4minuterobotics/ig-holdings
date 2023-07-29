@@ -3,7 +3,9 @@
 	background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
 	padding: 60px 0 200px 0;
 }
-
+.contact-align-items-center {
+	justify-content: center;
+}
 .contact .round-image {
 	border-radius: 50%;
 }
@@ -81,6 +83,11 @@
 .contact .round-image {
 	border-radius: 50% !important;
 }
+
+.contact-img-flexbox {
+	display: flex;
+}
+
 @media (max-width: 767px) {
 	.contact img {
 		width: 52% !important;

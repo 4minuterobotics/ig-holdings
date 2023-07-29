@@ -19,8 +19,32 @@ import {
 	navIcon1,
 	navIcon2,
 	navIcon3,
-	logo,
+	logoNoBg,
+	logoColorBg,
 } from '../assets';
+
+export const services = [
+	{
+		id: 1,
+		title: 'Behavorial Health Intergration',
+		imgUrl: counseling,
+	},
+	{
+		id: 2,
+		title: 'Patient-Centered Medical Homes (PCMH)',
+		imgUrl: house,
+	},
+	{
+		id: 3,
+		title: 'Community Health Centers',
+		imgUrl: clinic,
+	},
+	{
+		id: 4,
+		title: 'Chronic Care Management Programs',
+		imgUrl: heart,
+	},
+];
 
 export const blogArticles = [
 	{

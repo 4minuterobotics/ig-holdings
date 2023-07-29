@@ -127,10 +127,3 @@ p.danger {
 /* ********************************* */
 
 /* ...................... global centering style.................. */
-.flexbox {
-	display: flex;
-}
-
-.align-items-center {
-	justify-content: center;
-}

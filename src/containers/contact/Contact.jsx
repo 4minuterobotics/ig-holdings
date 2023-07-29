@@ -87,12 +87,12 @@ const Contact = () => {
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
               } */}
 							{({ isVisible }) => (
-								<div className='flexbox'>
+								<div className='contact-img-flexbox'>
 									<img
 										className={
 											isVisible
-												? 'animate__animated animate__zoomIn round-image align-items-center'
-												: 'invisible-start round-image align-items-center'
+												? 'animate__animated animate__zoomIn round-image contact-align-items-center'
+												: 'invisible-start round-image contact-align-items-center'
 										}
 										src={logoColorBg}
 										alt='Contact Us'
