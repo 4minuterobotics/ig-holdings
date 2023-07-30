@@ -23,10 +23,39 @@ import {
 	logoColorBg,
 } from '../assets';
 
+export const socialLinks = {
+	linkedinLink: 'https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/',
+	instagramLink: 'https://www.instagram.com/igholdings/',
+	facebookLink: 'https://www.facebook.com/MedicIGHoldingsSdnBhd',
+};
+
+export const navbarData = [
+	{
+		title: 'Home',
+		hashlink: '#home',
+		pagelink: '',
+	},
+	{
+		title: 'Services',
+		hashlink: '#services',
+		pagelink: '',
+	},
+	{
+		title: 'Projects',
+		hashlink: '#projects',
+		pagelink: '',
+	},
+	{
+		title: 'About Us',
+		hashlink: '#projects',
+		pagelink: '',
+	},
+];
+
 export const services = [
 	{
 		id: 1,
-		title: 'Behavorial Health Intergration',
+		title: 'Behavioral Health Intergration',
 		imgUrl: counseling,
 	},
 	{

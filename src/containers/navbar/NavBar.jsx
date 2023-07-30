@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { logoNoBg, navIcon1 } from '../../assets';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { navbarData, socialLinks } from '../../data';
 import './navbar.css';
 
 const NavBar = () => {
@@ -46,7 +47,19 @@ const NavBar = () => {
 					</Navbar.Toggle>
 					<Navbar.Collapse id='basic-navbar-nav'>
 						<Nav className='ms-auto'>
-							<Nav.Link
+							{navbarData.map((navItem, index) => {
+								return (
+									<Nav.Link
+										key={index}
+										href={navItem.hashlink}
+										className={activeLink === navItem.title ? 'active navbar-link' : 'navbar-link'}
+										onClick={() => onUpdateActiveLink(navItem.title)}
+									>
+										{navItem.title}
+									</Nav.Link>
+								);
+							})}
+							{/* <Nav.Link
 								href='#home'
 								className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
 								onClick={() => onUpdateActiveLink('home')}
@@ -73,11 +86,11 @@ const NavBar = () => {
 								onClick={() => onUpdateActiveLink('projects')}
 							>
 								About Us
-							</Nav.Link>
+							</Nav.Link> */}
 						</Nav>
 						<span className='navbar-text'>
 							<div className='social-icon'>
-								<a href='https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/'>
+								<a href={socialLinks.linkedinLink}>
 									<img
 										src={navIcon1}
 										alt=''

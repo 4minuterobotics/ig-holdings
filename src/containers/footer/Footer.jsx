@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import MailchimpForm from '../../components/mailchimpForm/MailchimpForm';
 import { navIcon1 } from '../../assets';
+import { socialLinks } from '../../data';
 import './footer.css';
 import React from 'react';
 
@@ -19,7 +20,7 @@ const Footer = () => {
 						className='text-center text-sm-end'
 					>
 						<div className='social-icon footer-icons'>
-							<a href='https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/'>
+							<a href={socialLinks.linkedinLink}>
 								<img
 									src={navIcon1}
 									alt='Icon'
