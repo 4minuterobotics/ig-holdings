@@ -23,6 +23,11 @@ import {
 	logoColorBg,
 } from '../assets';
 
+export const websiteText = {
+	banner:
+		'We are an integrated health specialists company, providing comprehensive and holistic solutions to all aspects of healthcare. Our team of experts is dedicated to helping you achieve your best health through innovative treatments and therapies. We strive for excellence in everything we do, from patient care to research and development, ensuring that our clients receive only the highest quality service. With years of experience in the field, we are well-equipped to handle any health-related issue, no matter how big or small. Our goal is to ensure that all our clients experience optimum health and wellness.',
+};
+
 export const socialLinks = {
 	linkedinLink: 'https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/',
 	instagramLink: 'https://www.instagram.com/igholdings/',

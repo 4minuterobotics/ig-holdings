@@ -55,10 +55,10 @@ const Services = () => {
 								infinite={true}
 								className='owl-carousel owl-theme skill-slider'
 							>
-								{services.map((service) => {
+								{services.map((service, index) => {
 									return (
 										<ServiceItem
-											key={service.id}
+											key={index}
 											title={service.title}
 											imgUrl={service.imgUrl}
 										/>

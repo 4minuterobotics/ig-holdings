@@ -26,6 +26,8 @@ import navIcon3 from './img/nav-icon3.svg';
 import logoNoBg from './img/ig-holdings-logo/logo-no-background-500px.png';
 import logoColorBg from './img/ig-holdings-logo/logo-color-500px.png';
 
+import previewImg from './img/preview.png';
+
 export {
 	colorSharp,
 	colorSharp2,
@@ -49,4 +51,5 @@ export {
 	navIcon3,
 	logoNoBg,
 	logoColorBg,
+	previewImg,
 };

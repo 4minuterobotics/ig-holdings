@@ -17,7 +17,7 @@ const Blog = () => (
 		</div>
 		<div className='rd__blog-container'>
 			<div className='rd__blog-container_groupB'>
-				{blogArticles.map((article, index) => {
+				{blogArticles.slice(0, 4).map((article, index) => {
 					return (
 						<Article
 							key={index}

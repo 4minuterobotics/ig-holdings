@@ -127,3 +127,7 @@ p.danger {
 /* ********************************* */
 
 /* ...................... global centering style.................. */
+.blog-img-uploader {
+	display: flex;
+	justify-content: center;
+}

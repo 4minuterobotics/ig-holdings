@@ -30,36 +30,35 @@ const NavBar = () => {
 		console.log('going to page section ', value);
 	};
 	return (
-		<Router>
-			<Navbar
-				expand='lg'
-				className={scrolled ? 'scrolled' : ''}
-			>
-				<Container>
-					<Navbar.Brand href='/'>
-						<img
-							src={logoNoBg}
-							alt='Logo'
-						/>
-					</Navbar.Brand>
-					<Navbar.Toggle aria-controls='basic-navbar-nav'>
-						<span className='navbar-toggler-icon'></span>
-					</Navbar.Toggle>
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='ms-auto'>
-							{navbarData.map((navItem, index) => {
-								return (
-									<Nav.Link
-										key={index}
-										href={navItem.hashlink}
-										className={activeLink === navItem.title ? 'active navbar-link' : 'navbar-link'}
-										onClick={() => onUpdateActiveLink(navItem.title)}
-									>
-										{navItem.title}
-									</Nav.Link>
-								);
-							})}
-							{/* <Nav.Link
+		<Navbar
+			expand='lg'
+			className={scrolled ? 'scrolled' : ''}
+		>
+			<Container>
+				<Navbar.Brand href='/'>
+					<img
+						src={logoNoBg}
+						alt='Logo'
+					/>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls='basic-navbar-nav'>
+					<span className='navbar-toggler-icon'></span>
+				</Navbar.Toggle>
+				<Navbar.Collapse id='basic-navbar-nav'>
+					<Nav className='ms-auto'>
+						{navbarData.map((navItem, index) => {
+							return (
+								<Nav.Link
+									key={index}
+									href={navItem.hashlink}
+									className={activeLink === navItem.title ? 'active navbar-link' : 'navbar-link'}
+									onClick={() => onUpdateActiveLink(navItem.title)}
+								>
+									{navItem.title}
+								</Nav.Link>
+							);
+						})}
+						{/* <Nav.Link
 								href='#home'
 								className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
 								onClick={() => onUpdateActiveLink('home')}
@@ -87,31 +86,30 @@ const NavBar = () => {
 							>
 								About Us
 							</Nav.Link> */}
-						</Nav>
-						<span className='navbar-text'>
-							<div className='social-icon'>
-								<a href={socialLinks.linkedinLink}>
-									<img
-										src={navIcon1}
-										alt=''
-									/>
-								</a>
-								{/* <a href="#"><img src={navIcon2} alt="" /></a>
+					</Nav>
+					<span className='navbar-text'>
+						<div className='social-icon'>
+							<a href={socialLinks.linkedinLink}>
+								<img
+									src={navIcon1}
+									alt=''
+								/>
+							</a>
+							{/* <a href="#"><img src={navIcon2} alt="" /></a>
         <a href="#"><img src={navIcon3} alt="" /></a> */}
-							</div>
-							<HashLink to='#connect'>
-								<button
-									className='vvd'
-									onClick={() => onUpdateActiveLink('connect')}
-								>
-									<span>Let’s Connect</span>
-								</button>
-							</HashLink>
-						</span>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-		</Router>
+						</div>
+						<HashLink to='#connect'>
+							<button
+								className='vvd'
+								onClick={() => onUpdateActiveLink('connect')}
+							>
+								<span>Let’s Connect</span>
+							</button>
+						</HashLink>
+					</span>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 	);
 };
 
