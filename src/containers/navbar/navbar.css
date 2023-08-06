@@ -159,6 +159,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	border: 1px solid white;
 }
 
+.navbar .collapsing {
+	background-color: #121212;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid white;
+}
+
 @media (max-width: 991px) {
 	nav.navbar a.navbar-brand {
 		width: 30%;

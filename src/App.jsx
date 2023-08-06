@@ -27,7 +27,6 @@ const App = () => {
 					                              learn more about how we can help you. " />
       <link rel="icon" type="image" href="./src/assets/img/logo.png" />
     </Helmet> */}
-
 			<ToastContainer
 				position='bottom-center'
 				limit={1}
@@ -36,7 +35,7 @@ const App = () => {
 			<Banner />
 			<Services />
 			<Projects />
-			<Blog />
+			{/* <Blog /> */}
 			<Contact />
 			<Footer />
 		</div>
