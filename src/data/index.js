@@ -118,7 +118,7 @@ export const projects = [
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'helping mfs',
+				name: 'helping people',
 				color: 'orange-text-gradient',
 			},
 		],
