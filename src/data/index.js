@@ -11,6 +11,7 @@ import {
 	website2,
 	website3,
 	website4,
+	website5,
 	blog1,
 	blog2,
 	blog3,
@@ -29,9 +30,9 @@ export const websiteText = {
 };
 
 export const socialLinks = {
-	linkedinLink: 'https://www.linkedin.com/company/medic-ig-holdings-sdn-bhd/',
-	instagramLink: 'https://www.instagram.com/igholdings/',
-	facebookLink: 'https://www.facebook.com/MedicIGHoldingsSdnBhd',
+	linkedinLink: 'https://www.linkedin.com/',
+	instagramLink: 'https://www.instagram.com/',
+	facebookLink: 'https://www.facebook.com/',
 };
 
 export const navbarData = [
@@ -82,10 +83,10 @@ export const services = [
 
 export const projects = [
 	{
-		title: 'IG Counseling',
+		title: 'I Group We Care',
 		description:
-			'By combining physical and mental health services, our providers can better address the mental and emotional well-being of patients and identify potential health issues early on.',
-		imgUrl: website1,
+			'We provide a comfortable, structured, therapeutic, community living environment for residents helping them work towards a goal of living a productive and independent life. We provide life skills, resources, and tools necessary to succeed outside of our home. ',
+		imgUrl: website5,
 		tags: [
 			{
 				name: 'counseling',
@@ -100,7 +101,7 @@ export const projects = [
 				color: 'orange-text-gradient',
 			},
 		],
-		website_link: 'https://facebook.com',
+		website_link: 'https://www.igroupwecare.com/',
 	},
 	{
 		title: 'IG Chronic Care',
@@ -121,7 +122,7 @@ export const projects = [
 				color: 'orange-text-gradient',
 			},
 		],
-		website_link: 'https://instagram.com',
+		website_link: 'https://www.igholdingsllc.org',
 	},
 	{
 		title: 'IG Remote Monitoring',
@@ -142,7 +143,7 @@ export const projects = [
 				color: 'orange-text-gradient',
 			},
 		],
-		website_link: 'https://google.com',
+		website_link: 'https://www.igholdingsllc.org',
 	},
 	{
 		title: 'IG Health Centers',
@@ -162,7 +163,7 @@ export const projects = [
 				color: 'orange-text-gradient',
 			},
 		],
-		website_link: 'https://myspace.com',
+		website_link: 'https://www.igholdingsllc.org',
 	},
 ];
 

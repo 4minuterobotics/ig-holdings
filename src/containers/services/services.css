@@ -25,6 +25,8 @@
 	width: 80%;
 	margin: 0 auto;
 	position: relative;
+	/* display: flex;
+	justify-content: center; */
 }
 .skill-slider .item img {
 	width: 50%;

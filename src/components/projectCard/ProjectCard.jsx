@@ -17,7 +17,10 @@ const ProjectCard = ({ title, description, imgUrl, tags, source_code_link, websi
 					className='proj-imgbx'
 					onClick={() => setModalShow(true)}
 				>
-					<img src={imgUrl} />
+					<img
+						src={imgUrl}
+						loading='lazy'
+					/>
 
 					<div className='proj-txtx'>
 						<h4>{title}</h4>

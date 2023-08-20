@@ -44,9 +44,9 @@ const Contact = () => {
 				import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
 				{
 					from_name: form.name,
-					to_name: 'William',
+					to_name: 'Ig Holdings Info',
 					from_email: form.email,
-					to_email: 'lawrence.william86@gmail.com',
+					to_email: 'info@igholdingsllc.org',
 					message: form.message,
 				},
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -72,16 +72,10 @@ const Contact = () => {
 	};
 
 	return (
-		<section
-			className='contact'
-			id='connect'
-		>
+		<section className='contact' id='connect'>
 			<Container>
 				<Row>
-					<Col
-						size={12}
-						md={6}
-					>
+					<Col size={12} md={6}>
 						<TrackVisibility partialVisibility>
 							{/* {({ isVisible }) =>
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
@@ -101,56 +95,21 @@ const Contact = () => {
 							)}
 						</TrackVisibility>
 					</Col>
-					<Col
-						size={12}
-						md={6}
-					>
+					<Col size={12} md={6}>
 						<TrackVisibility partialVisibility>
 							{({ isVisible }) => (
 								<div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
 									<h2>Get In Touch</h2>
-									<form
-										onSubmit={handleSubmit}
-										ref={formRef}
-									>
+									<form onSubmit={handleSubmit} ref={formRef}>
 										<Row>
-											<Col
-												size={12}
-												sm={6}
-												className='px-1'
-											>
-												<input
-													type='text'
-													name='name'
-													value={form.name}
-													placeholder='Name'
-													onChange={handleChange}
-												/>
+											<Col size={12} sm={6} className='px-1'>
+												<input type='text' name='name' value={form.name} placeholder='Name' onChange={handleChange} />
 											</Col>
-											<Col
-												size={12}
-												sm={6}
-												className='px-1'
-											>
-												<input
-													type='email'
-													name='email'
-													value={form.email}
-													placeholder='Email Address'
-													onChange={handleChange}
-												/>
+											<Col size={12} sm={6} className='px-1'>
+												<input type='email' name='email' value={form.email} placeholder='Email Address' onChange={handleChange} />
 											</Col>
-											<Col
-												size={12}
-												className='px-1'
-											>
-												<textarea
-													rows='6'
-													name='message'
-													value={form.message}
-													placeholder='Message'
-													onChange={handleChange}
-												></textarea>
+											<Col size={12} className='px-1'>
+												<textarea rows='6' name='message' value={form.message} placeholder='Message' onChange={handleChange}></textarea>
 												<button type='submit'>
 													<span>{buttonText}</span>
 												</button>

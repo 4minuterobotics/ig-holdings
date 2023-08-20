@@ -14,21 +14,15 @@ const Footer = () => {
 					{/* <Col size={12} sm={6}>
                 <img src={logo} alt="Logo" />
               </Col> */}
-					<Col
-						size={12}
-						sm={6}
-						className='text-center text-sm-end'
-					>
+					<Col size={12} sm={6} className='text-center text-sm-end'>
 						<div className='social-icon footer-icons'>
 							<a href={socialLinks.linkedinLink}>
-								<img
-									src={navIcon1}
-									alt='Icon'
-								/>
+								<img src={navIcon1} alt='Icon' />
 							</a>
 							{/* <a href="#"><img src={navIcon2} alt="Icon" /></a>
                   <a href="#"><img src={navIcon3} alt="Icon" /></a> */}
 						</div>
+						<p>(480) 915-2288</p>
 						<p>Copyright 2023. All Rights Reserved</p>
 					</Col>
 				</Row>

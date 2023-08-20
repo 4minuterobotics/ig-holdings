@@ -20,29 +20,6 @@ const Banner = () => {
 					<Col
 						xs={12}
 						md={6}
-						xl={7}
-					>
-						<TrackVisibility partialVisibility>
-							{({ isVisible }) => (
-								<div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-									<span className='tagline'>Integrated Health Speialists</span>
-									<h1>IG Holdings</h1>
-									<p>{websiteText.banner}</p>
-									<HashLink
-										to='#connect'
-										className='connectlink'
-									>
-										<button onClick={() => console.log('connect')}>
-											Let’s Connect <ArrowRightCircle size={25} />
-										</button>
-									</HashLink>
-								</div>
-							)}
-						</TrackVisibility>
-					</Col>
-					<Col
-						xs={12}
-						md={6}
 						xl={5}
 					>
 						<TrackVisibility partialVisibility>
@@ -52,6 +29,29 @@ const Banner = () => {
 										src={medicalShield}
 										alt='Header Img'
 									/>
+								</div>
+							)}
+						</TrackVisibility>
+					</Col>
+					<Col
+						xs={12}
+						md={6}
+						xl={7}
+					>
+						<TrackVisibility partialVisibility>
+							{({ isVisible }) => (
+								<div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
+									{/* <span className='tagline'>Integrated Health Speialists</span>
+									<h1>IG Holdings</h1> */}
+									<p>{websiteText.banner}</p>
+									<HashLink
+										to='#connect'
+										className='connectlink'
+									>
+										<button onClick={() => console.log('connect')}>
+											Let’s Connect <ArrowRightCircle size={25} />
+										</button>
+									</HashLink>
 								</div>
 							)}
 						</TrackVisibility>

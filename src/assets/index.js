@@ -12,6 +12,7 @@ import website1 from './img/website1.png';
 import website2 from './img/website2.png';
 import website3 from './img/website3.png';
 import website4 from './img/website4.png';
+import website5 from './img/website5.png';
 
 import blog1 from './img/section-a-blog-pic-copy.png';
 import blog2 from './img/section-b-blog-pic1-copy.png';
@@ -41,6 +42,7 @@ export {
 	website2,
 	website3,
 	website4,
+	website5,
 	blog1,
 	blog2,
 	blog3,
