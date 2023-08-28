@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { logoColorBg } from '../../assets';
+import { logo, logoBlackBg } from '../../assets';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
@@ -88,7 +88,7 @@ const Contact = () => {
 												? 'animate__animated animate__zoomIn round-image contact-align-items-center'
 												: 'invisible-start round-image contact-align-items-center'
 										}
-										src={logoColorBg}
+										src={logoBlackBg}
 										alt='Contact Us'
 									/>
 								</div>

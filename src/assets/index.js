@@ -26,6 +26,10 @@ import navIcon3 from './img/nav-icon3.svg';
 
 import logoNoBg from './img/ig-holdings-logo/logo-no-background-500px.png';
 import logoColorBg from './img/ig-holdings-logo/logo-color-500px.png';
+import logo from './img/ig-holdings-logo/ig-logo-compressed.png';
+import logoIcon from './img/ig-holdings-logo/ig-logo-compressed-icon.png';
+import logoThumbnail from './img/ig-holdings-logo/ig-logo-thumbnail.png';
+import logoBlackBg from './img/ig-holdings-logo/ig-logo-black-bg.png';
 
 import previewImg from './img/preview.png';
 
@@ -54,4 +58,8 @@ export {
 	logoNoBg,
 	logoColorBg,
 	previewImg,
+	logo,
+	logoThumbnail,
+	logoIcon,
+	logoBlackBg,
 };

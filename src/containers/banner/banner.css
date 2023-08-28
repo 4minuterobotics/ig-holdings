@@ -77,9 +77,12 @@
 
 @media (max-width: 767px) {
 	.banner img {
-		/* width: 25%;
-		margin-left: 12rem; */
-		display: none;
+		max-width: 75%;
+	}
+	.banner .img-div {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 20px;
 	}
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { logoNoBg, navIcon1 } from '../../assets';
+import { logoNoBg, navIcon1, logoIcon } from '../../assets';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { navbarData, socialLinks } from '../../data';
@@ -30,16 +30,10 @@ const NavBar = () => {
 		console.log('going to page section ', value);
 	};
 	return (
-		<Navbar
-			expand='lg'
-			className={scrolled ? 'scrolled' : ''}
-		>
+		<Navbar expand='lg' className={scrolled ? 'scrolled' : ''}>
 			<Container>
 				<Navbar.Brand href='/'>
-					<img
-						src={logoNoBg}
-						alt='Logo'
-					/>
+					<img src={logoIcon} alt='Logo' />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav'>
 					<span className='navbar-toggler-icon'></span>
@@ -90,19 +84,13 @@ const NavBar = () => {
 					<span className='navbar-text'>
 						<div className='social-icon'>
 							<a href={socialLinks.linkedinLink}>
-								<img
-									src={navIcon1}
-									alt=''
-								/>
+								<img src={navIcon1} alt='' />
 							</a>
 							{/* <a href="#"><img src={navIcon2} alt="" /></a>
         <a href="#"><img src={navIcon3} alt="" /></a> */}
 						</div>
 						<HashLink to='#connect'>
-							<button
-								className='vvd'
-								onClick={() => onUpdateActiveLink('connect')}
-							>
+							<button className='vvd' onClick={() => onUpdateActiveLink('connect')}>
 								<span>Let’s Connect</span>
 							</button>
 						</HashLink>
